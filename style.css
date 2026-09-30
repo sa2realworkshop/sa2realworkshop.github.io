@@ -67,3 +67,30 @@ td:first-child { white-space: nowrap; }
   main { padding-top: 28px; }
   th, td { padding: 9px 8px; font-size: 14px; }
 }
+
+
+/* Full-width blue header */
+.site-header {
+  background-color: #19558a;
+  border-top: none;
+  border-bottom: none;
+}
+
+.header-inner {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.site-title,
+nav a {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-header a:focus-visible {
+  outline-color: #ffffff;
+}
