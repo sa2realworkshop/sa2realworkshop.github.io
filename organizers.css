@@ -1,0 +1,45 @@
+/* Only the organizers page uses these styles.
+   General fonts, colours and navigation still come from style.css. */
+
+/* Three centered profiles per row. The final row is centered too. */
+.organizer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 38px 24px;
+  margin: 34px 0 44px;
+}
+.organizer {
+  flex: 0 1 calc((100% - 48px) / 3);
+  min-width: 0;
+  text-align: center;
+}
+.organizer-photo {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 14px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%; /* Use 0 for square photos. */
+  background: #f1f1f1;
+}
+.organizer-name {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 6px;
+}
+.organizer-affiliation {
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Two profiles per row on small screens; one on narrow phones. */
+@media (max-width: 640px) {
+  .organizer { flex-basis: calc((100% - 24px) / 2); }
+}
+@media (max-width: 380px) {
+  .organizer { flex-basis: 100%; }
+}
