@@ -94,3 +94,29 @@ nav a:hover {
 .site-header a:focus-visible {
   outline-color: #ffffff;
 }
+
+
+
+.intro-teaser {
+  float: right;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin: 0.3rem 0 1rem 1.5rem;
+}
+
+/* Start subsequent sections below the image */
+h2 {
+  clear: both;
+}
+
+/* Centre the image on small screens */
+@media (max-width: 700px) {
+  .intro-teaser {
+    float: none;
+    display: block;
+    width: 70%;
+    max-width: 250px;
+    margin: 1rem auto 1.5rem;
+  }
+}
